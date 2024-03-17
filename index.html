@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+
+    <main>
+      <h1>Examen de Desarrollador Front-End</h1>
+      <section>
+        <h2>Parte 1: Conceptos teóricos</h2>
+        <ol>
+          <article>
+              <h3>HTML/CSS</h3>
+              <ul>
+                <p>Explica la diferencia entre margin y padding en CSS.</p>
+                <p class="answer">
+                  <b>margin</b> es una propiedad usada para referirnos al espacio que se encuentra 
+                  fuera del borde de un elemento HTML. Nos permite controlar el espacio entre los 
+                  bordes de un elemento y otros elementos cercanos. Los márgenes pueden ser 
+                  positivos o negativos y así aumentar o reducir el espacio entre elementos.
+                </p>
+                <img src="/public/margin.png" class="answer-img" alt="descripcion gráfica de margen de un elemento HTML">
+                <p class="answer">
+                  <b>padding</b> por otra parte, es el espacio que se encuentra dentro del borde 
+                  de un elemento, entre el contenido del elemento y su borde.
+                  Controla el espacio entre el contenido del elemento y su propio borde.
+                </p>
+                <img src="/public/padding.png" class="answer-img" alt="descripción gráfica de relleno de un elemento HTML">
+                <p class="answer">
+                  La diferencia entre <b>margin</b> y <b>padding</b> radica en que el margen 
+                  controla el espacio fuera del borde del elemento HTML y el relleno se encarga 
+                  del espacio dentro del borde del elemento. 
+                </p>
+                <p>¿Qué es el modelo de caja en CSS y cuáles son sus componentes principales?</p>
+                <p class="answer">
+                  El <b>modelo de caja básico de CSS</b> es un estandar que describe como deben 
+                  representarse los elementos HTML por el motor de renderizado del navegador e 
+                  indica que <b>cada elemento es</b> considerado como <b>una caja rectangular con 
+                  cuatro áreas esenciales: área de contenido, área de relleno, borde de la caja y 
+                  margen de la caja.</b> Cada una de estas áreas tiene un papel específico en la 
+                  disposición y apariencia del elemento en la página.
+                </p>
+                <img src="/public/box-model.png" class="answer-img" alt="representación del modelo del cajas CSS">
+                <p class="answer">
+                  <b>Content</b> es el área central del elemento y contiene el contenido real 
+                  (texto, imágenes u otros elementos HTML). El tamaño del contenido está 
+                  determinado por las propiedades <b>width</b> y <b>height</b> del elemento.
+                </p>
+              </ul>
+          </article>
+          <article>
+            <h3>JavaScript</h3>
+            <ul>
+              <p>Explique el concepto de "hoisting" en JavaScript.</p>
+              <p class="answer">
+                Respuesta
+              </p>
+              <p>¿Cuál es la diferencia entre let, const y var en la declaración de variables?</p>
+              <p class="answer">
+                Respuesta
+              </p>
+              <p>Describa cómo funciona el event bubbling en el contexto de eventos de JavaScript.</p>
+              <p class="answer">
+                Respuesta
+              </p>
+            </ul>
+          </article>
+          <article>
+            <h3>Responsive Web Design</h3>
+            <ul>
+              <p>¿Qué son los media queries y cómo se utilizan en CSS para crear un diseño receptivo?</p>
+              <p class="answer">
+                Respuesta
+              </p>
+              <p>Menciona al menos dos técnicas para hacer que las imágenes sean receptivas en una
+                página web.
+              </p>
+              <p class="answer">
+                Respuesta
+              </p>
+            </ul>
+          </article>
+        </ol>
+      </section>
+      <section>
+        <h2>Parte 2: Ejercicio práctico</h2>
+        <ol>
+          <article>
+            <h3>HTML/CSS/JS</h3>
+            <ul>
+              <p>Crea una página web simple con un encabezado, un párrafo de texto y un botón.</p>
+              <p>Al hacer clic en el botón, cambia el color del fondo del párrafo de texto a otro color
+                diferente.
+              </p>
+            </ul>
+          </article>
+        </ol>
+      </section>
+      <section>
+        <h2>Parte 3: Resolución de problemas</h2>
+        <ol>
+          <article>
+            <h3>Problema de Lógica</h3>
+            <ul>
+              <p>Escribe una función en JavaScript que tome un arreglo de números como parámetro y
+                devuelva el número más grande.
+              </p>
+              <p class="answer">
+                Respuesta se puede poner en markdown?
+              </p>
+            </ul>
+          </article>
+        </ol>
+      </section>
+      <section>
+        <h2>Parte 4: Proyecto práctico</h2>
+        <ol>
+          <article>
+            <h3>Desarrollo de Componente</h3>
+            <ul>
+              <p>
+                Desarrolla un componente de barra de navegación (navbar) completamente responsivo utilizando HTML, CSS y opcionalmente JavaScript si es necesario.
+              </p>
+              <p>
+                Asegúrate de que la barra de navegación tenga al menos tres elementos de navegación y que se adapte adecuadamente a diferentes tamaños de pantalla.
+              </p>
+            </ul>
+          </article>
+          <article>
+            <h3>Desarrollo de Componente</h3>
+            <ul>
+              <p>
+                Crea tu CV como una página web integrando sass en donde este pueda ser descargado mediante un botón en formato pdf.
+              </p>
+            </ul>
+          </article>
+        </ol>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
