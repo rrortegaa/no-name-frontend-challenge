@@ -84,7 +84,7 @@ code {
 .code-block {
   background-color: #f9f9f9;
   border-radius: 8px;
-  margin-top: 24px;
+  margin: 24px 0;
   padding: 20px;
 }
 
