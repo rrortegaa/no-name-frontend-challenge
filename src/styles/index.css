@@ -76,6 +76,8 @@ code {
 }
 
 #second-question-text-bg {
+  border-radius: 4px;
+  font-weight: 600;
   padding: 24px 12px;
 }
 
@@ -87,7 +89,7 @@ code {
 }
 
 button {
-  background-color: #1a1a1a;
+  background-color: #646cff;
   border-radius: 8px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -95,11 +97,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   padding: 0.6em 1.2em;
-  transition: border-color 0.25s;
+  transition: border-color, box-shadow 0.3s;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #e2d7f4;
+  box-shadow: 0 0 20px #646cff;
 }
 
 button:focus,
