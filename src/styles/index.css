@@ -73,6 +73,8 @@ code {
   display: flex;
   margin: auto;
   max-width: 728px;
+  object-fit: cover;
+  width: 100%;
 }
 
 #second-question-text-bg {
