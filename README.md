@@ -22,8 +22,8 @@ __Un proyecto web simple que muestra las soluciones a las preguntas teóricas, a
 - Instalar las dependencias: ```npm install```
 - Ejecución:
 
-    -Iniciar el servidor de desarrollo: ```npm run dev```
-    -Abrir el navegador en la dirección http://localhost:5173
+    - Iniciar el servidor de desarrollo: ```npm run dev```
+    - Abrir el navegador en la dirección http://localhost:5173
 
 
 Enlaces:
