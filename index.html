@@ -2,13 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="/src/styles/index.css" />
+    <title>Examen de Desarrollador Front-End App</title>
   </head>
   <body>
-    <!-- <div id="app"></div> -->
-
     <main>
       <h1>Examen de Desarrollador Front-End</h1>
       <section>
@@ -19,37 +18,75 @@
               <ul>
                 <p>Explica la diferencia entre margin y padding en CSS.</p>
                 <p class="answer">
-                  <b>margin</b> es una propiedad usada para referirnos al espacio que se encuentra 
+                  <code>margin</code> es una propiedad usada para referirnos al espacio que se encuentra 
                   fuera del borde de un elemento HTML. Nos permite controlar el espacio entre los 
                   bordes de un elemento y otros elementos cercanos. Los márgenes pueden ser 
                   positivos o negativos y así aumentar o reducir el espacio entre elementos.
                 </p>
-                <img src="/public/margin.png" class="answer-img" alt="descripcion gráfica de margen de un elemento HTML">
+                <img src="/margin.png" class="answer-img" alt="descripcion gráfica de margen de un elemento HTML">
                 <p class="answer">
-                  <b>padding</b> por otra parte, es el espacio que se encuentra dentro del borde 
+                  <code>padding</code> por otra parte, es el espacio que se encuentra dentro del borde 
                   de un elemento, entre el contenido del elemento y su borde.
                   Controla el espacio entre el contenido del elemento y su propio borde.
                 </p>
-                <img src="/public/padding.png" class="answer-img" alt="descripción gráfica de relleno de un elemento HTML">
+                <img src="/padding.png" class="answer-img" alt="descripción gráfica de relleno de un elemento HTML">
                 <p class="answer">
-                  La diferencia entre <b>margin</b> y <b>padding</b> radica en que el margen 
+                  La diferencia entre <code>margin</code> y <code>padding</code> radica en que el margen 
                   controla el espacio fuera del borde del elemento HTML y el relleno se encarga 
-                  del espacio dentro del borde del elemento. 
+                  del espacio dentro del borde del elemento.
                 </p>
                 <p>¿Qué es el modelo de caja en CSS y cuáles son sus componentes principales?</p>
                 <p class="answer">
-                  El <b>modelo de caja básico de CSS</b> es un estandar que describe como deben 
-                  representarse los elementos HTML por el motor de renderizado del navegador e 
-                  indica que <b>cada elemento es</b> considerado como <b>una caja rectangular con 
+                  El <code>modelo de caja de CSS</code> es un estandar que describe como deben 
+                  estructurarse los elementos HTML por el motor de renderizado del navegador en una página web e 
+                  indica que cada elemento es considerado como una caja rectangular con 
                   cuatro áreas esenciales: área de contenido, área de relleno, borde de la caja y 
-                  margen de la caja.</b> Cada una de estas áreas tiene un papel específico en la 
+                  margen de la caja. Cada una de estas áreas tiene un papel específico en la 
                   disposición y apariencia del elemento en la página.
                 </p>
-                <img src="/public/box-model.png" class="answer-img" alt="representación del modelo del cajas CSS">
+                <img src="/box-model.png" class="answer-img" alt="representación del modelo de cajas CSS">
                 <p class="answer">
-                  <b>Content</b> es el área central del elemento y contiene el contenido real 
-                  (texto, imágenes u otros elementos HTML). El tamaño del contenido está 
-                  determinado por las propiedades <b>width</b> y <b>height</b> del elemento.
+                  <code>content</code> es el área central del elemento y es donde ponemos el contenido 
+                  real (texto, imágenes u otros elementos HTML). El tamaño del contenido está 
+                  definido por las propiedades <code>width</code> y <code>height</code> del elemento.
+                </p>
+                <p class="answer">
+                  <code>padding</code> representa el espacio entre el contenido del elemento y su borde. 
+                  La propiedad padding nos permite agregar espacio adicional a lo ancho y alto 
+                  alrededor del contenido del elemento.
+                </p>
+                <p class="answer">
+                  <code>border</code> es la línea que establece el límite visual del elemento, el borde 
+                  rodea el contenido y el relleno del elemento. Para controlar el ancho, estilo y 
+                  color del borde se usan las propiedades <code>border-width</code>, <code>border-style</code> 
+                  y <code>border-color</code> respectivamente.
+                </p>
+                <p class="answer">
+                  <code>margin</code> define el espacio entre el borde del elemento y otros elementos cercanos.
+                  Con la propiedad <code>margin</code> controlamos la separación a lo ancho y alto entre 
+                  elementos adyacentes en una página web.
+                </p>
+                <p class="answer">
+                  Otras propiedades que surgieron en un box model alternativo son <code>box-sizing</code>, 
+                  <code>display</code> y <code>position</code>.
+                </p>
+                <p class="answer">
+                  Para ayudarnos a controlar cómo se calculan las 
+                  dimensiones de los elementos HTML usamos <code>box-sizing</code>, su valor 
+                  predeterminado es <code>content-box</code> y para facilitar la consistencia al trabajar 
+                  con diseños responsivos o de cajas flexibles es mejor utilizar su valor alternativo 
+                  <code>border-box</code>.
+                </p>
+                <p class="answer">
+                  Con la propiedad <code>display</code> establecemos como se muestra el elemento (como 
+                  bloque o como línea) y por tanto se comportará de forma diferente dependiendo del 
+                  valor de display seleccionado.
+                </p>
+                <p class="answer">
+                  <code>position</code> nos permite definir como se posiciona un elemento en el documento, 
+                  modificando el flujo normal del documento y cómo se superponen los elementos unos 
+                  sobre otros. Entre sus posibles valores están <code>static</code>, <code>relative</code>, 
+                  <code>absolute</code>, <code>fixed</code> y <code>sticky</code>
                 </p>
               </ul>
           </article>
@@ -58,15 +95,53 @@
             <ul>
               <p>Explique el concepto de "hoisting" en JavaScript.</p>
               <p class="answer">
-                Respuesta
+                El termino <code>hoisting</code> se refiere a un comportamiento del motor de JavaScript 
+                en el que las declaraciones de variables y funciones son asignadas en memoria durante 
+                la compilación, provocando su 'elevación' al inicio del ámbito de ejecución en el 
+                que se encuentren. Esto permite que podamos utilizar una función o una variable 
+                antes de que sea declarada, sin embargo, el hoisting no aplica a las inicializaciones 
+                y estas se quedan en su sitio, así, los valores podrán ser asignados cuando el proceso de 
+                compilacion alcance esa instrucción.
+              </p>
+              <p class="answer">
+                El <code>hoisting</code> es consecuencia del proceso de dos fases que sigue el 
+                motor de JavaScript cuando va a ejecutar algún código: la fase de creación donde 
+                crea el ámbito de la función y realiza la asignación en memoria de variables y 
+                la fase de ejecución en el que ejecuta el código.
               </p>
               <p>¿Cuál es la diferencia entre let, const y var en la declaración de variables?</p>
               <p class="answer">
-                Respuesta
+                La palabra reservada <code>var</code> tiene un scope global si se declara fuera de una 
+                función y si es declarada dentro de una función, solo es accesible dentro de 
+                dicha función, por otro lado, solo es posible acceder a las variables declaradas con 
+                <code>let</code> y <code>const</code> dentro del bloque o expresión de código en el que se usan. 
+              </p>
+              <p class="answer">
+                Al usar variables declaradas con <code>var</code> podemos declarar la misma 
+                variable tantas veces como lo deseemos, en cambio, <code>let</code> solo nos permite 
+                reasignar su valor y, usando <code>const</code> las constantes no se pueden volver a 
+                declarar ni se pueden reasignar.
+              </p>
+              <p class="answer">
+                <code>var</code> además, permite el hoisting a diferencia de <code>let</code> y 
+                <code>const</code> que son más seguras.
               </p>
               <p>Describa cómo funciona el event bubbling en el contexto de eventos de JavaScript.</p>
               <p class="answer">
-                Respuesta
+                <code>event bubbling</code> es un término usado para refererirse a la propogación 
+                de eventos desde el lugar en el que se originaron pasando por sus padres y abuelos 
+                hasta llegar a la raíz en el DOM.
+              </p>
+              <img src="/event-bubbling.png" class="answer-img" alt="event bubbling en el árbol DOM">
+              <p class="answer">
+                <b>Primero</b>, se lanza el evento en el elemento target, <b>a continuación</b>, el evento se propaga 
+                desde el elemento objetivo hacia arriba pasando por todos sus ancestros en el árbol DOM, 
+                <b>por último</b>, la propagación permite que cada ancestro pueda manejar el evento si está 
+                preparado para escuchar el tipo de evento específico que ha sido lanzado.
+              </p>
+              <p class="answer">
+                Se puede aprovechar esta característica para hacer delegación de eventos y también es 
+                posible detener la propagación cuando sea necesario con <code>event.stopPropagation()</code>
               </p>
             </ul>
           </article>
@@ -75,13 +150,33 @@
             <ul>
               <p>¿Qué son los media queries y cómo se utilizan en CSS para crear un diseño receptivo?</p>
               <p class="answer">
-                Respuesta
+                Los <code>media queries</code> son herramientas de CSS que permiten aplicar diferentes 
+                estilos a un elemento dependiendo del dispositivo que se utilice, el tamaño del 
+                mismo, la resolución de pantalla o la orientación, entre otros; para aplicar los 
+                diferentes estilos se basan en condiciones para evaluar el tipo de medio o las 
+                características del dispositivo.
+              </p>
+              <p class="answer">
+                Los <code>media queries</code> surgieron para ayudar a reducir el tiempo de desarrollo, 
+                para crear contenido adaptativo y fluido ya que al implementarlos no es necesario crear 
+                diferentes páginas web para cubrir los diversos tipos de dispositivos que se utilizan 
+                en la actualidad y finalmente, para mejorar la experiencia del usuario sin importar 
+                si está accediendo desde un teléfono, una tablet o una computadora.
               </p>
               <p>Menciona al menos dos técnicas para hacer que las imágenes sean receptivas en una
                 página web.
               </p>
               <p class="answer">
-                Respuesta
+                Usar unidades relativas para definir el tamaño de la imagen en lugar de pixeles, p.e. 
+                <code>vw</code> o <code>vh</code>.
+              </p>
+              <p class="answer">
+                Utilizar la propiedad <code>max-width</code> de la imagen para hacer que esta se ajuste al  
+                ancho disponible en su contenedor pero que no supere el tamaño que le ha sido dado.
+              </p>
+              <p class="answer">
+                También se puede utilizar la propiedad <code>object-fit</code> de la imagen para controlar  
+                como debería redimensionarse para ajustarse a su contenedor.
               </p>
             </ul>
           </article>
@@ -94,8 +189,12 @@
             <h3>HTML/CSS/JS</h3>
             <ul>
               <p>Crea una página web simple con un encabezado, un párrafo de texto y un botón.</p>
-              <p>Al hacer clic en el botón, cambia el color del fondo del párrafo de texto a otro color
+              <p>
+                Al hacer clic en el botón, cambia el color del fondo del párrafo de texto a otro color
                 diferente.
+              </p>
+              <p class="answer">
+                <a href="/src/question2.html">Solución</a>
               </p>
             </ul>
           </article>
@@ -111,7 +210,7 @@
                 devuelva el número más grande.
               </p>
               <p class="answer">
-                Respuesta se puede poner en markdown?
+                <a href="/src/question3.html">Solución</a>
               </p>
             </ul>
           </article>
@@ -129,6 +228,9 @@
               <p>
                 Asegúrate de que la barra de navegación tenga al menos tres elementos de navegación y que se adapte adecuadamente a diferentes tamaños de pantalla.
               </p>
+              <p class="answer">
+                <a href="/src/question4.html">Solución</a>
+              </p>
             </ul>
           </article>
           <article>
@@ -137,12 +239,13 @@
               <p>
                 Crea tu CV como una página web integrando sass en donde este pueda ser descargado mediante un botón en formato pdf.
               </p>
+              <p class="answer">
+                <a href="/src/question4cv.html">Solución</a>
+              </p>
             </ul>
           </article>
         </ol>
       </section>
     </main>
-
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
