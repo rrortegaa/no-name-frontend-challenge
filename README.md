@@ -29,4 +29,4 @@ __Un proyecto web simple que muestra las soluciones a las preguntas teóricas, a
 ## Enlaces:
 
 - [Repositorio del proyecto](https://github.com/rrortegaa/no-name-frontend-challenge.git)
-- [Sitio web del proyecto](https://www.somewebsite.com)
+- [Sitio web del proyecto](https://assessment.purplerose.dev/)
